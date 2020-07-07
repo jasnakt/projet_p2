@@ -9,8 +9,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="Feature",
-		dryRun=true,
-		monochrome=true
+		dryRun=true
 		)
 
 public class Runnerclass {
