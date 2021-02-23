@@ -1,9 +1,10 @@
 Feature: Login functionality
 
-  Scenario: Sucessfull login
+  Scenario Outline: Sucessfull login
     Given User in login page
-    When user enter username and password
+    When user enter "<username>" and "<password>"
+    Then User is sucessfully logged in
+    Examples:
       | Username1 | Password1 |
       | Username2 | Password2 |
       | Username3 | Password3 |
-    Then User is sucessfully logged in
